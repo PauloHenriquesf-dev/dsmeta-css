@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSMeta</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header> <!--delimita um bloco, indica asos navegadores etc q é a parte de cabeçalho-->
+        <div class="dsmeta-logo-container"> <!--delimita um bloco-->
+            <img src="logo.svg" alt="DSMeta"> <!--colocando imagem-->
+            <h1>DSMeta</h1>
+            <p>
+                Desenvolvido por
+                <!--tag a é uma tag de link--> 
+                <a href="https://www.instagram.com/paulohenrique_14g/">@paulohenrique_14g</a>
+            </p>
+        </div>
+        <!--o posicionamento pra esses cara acima se da estilizando-os no css-->
+        <!--p/ isso dentro de div coloca class e da um nome-->
+    </header>
+
+    <main> <!--vai ser a sessao principal-->
+        <section id="sales"> <!--vendas-->
+            <div class="dsmeta-container"> <!--usar essa div pra controlar a largura maxima do "card"-->
+                <div class="dsmeta-card">
+                    <h2 class="dsmeta-sales-title">Vendas</h2>
+                    <div> <!--demilitar a area das caixinhas das datas-->
+                        <div class="dsmeta-form-control-container"> <!--div da caixinha 1-->
+                            <input class="dsmeta-form-control"> <!--input é pra vc entrar com algum valor-->
+                        </div>
+                        <div class="dsmeta-form-control-container"> <!--div da caixinha 2-->
+                            <input class="dsmeta-form-control">
+                        </div>
+                    </div>
+
+                    <div>
+                        <table class="dsmeta-sales-table"> <!--tabela-->
+                            <thead> <!--linha dos titulos (cabeçalho)-->
+                                <tr>
+                                    <th class="show992">ID</th>
+                                    <th class="show576">Data</th>
+                                    <th>Vendedor</th>
+                                    <th class="show992">Visitas</th>
+                                    <th class="show992">Vendas</th>
+                                    <th>Total</th>
+                                    <th>Notificar</th>
+                                </tr>
+                            </thead>
+                            <tbody> <!--corpo da tabela-->
+                                <tr>
+                                    <th class="show992">#111</th> <!--ID-->
+                                    <td class="show576">08/07/2022</td>
+                                    <td>Fulano</td>
+                                    <th class="show992">15</th> <!--visitas-->
+                                    <th class="show992">11</th> <!--vendas-->
+                                    <td>R$ 55300.00</td>
+                                    <td>
+                                        <div class="dsmeta-red-button-container">
+                                            <div class="dsmeta-red-button"> <!--esse div sera o botao-->
+                                                <img src="notification-icon.svg" alt="Notificar">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="show992">#222</th> <!--ID-->
+                                    <td class="show576">08/07/2022</td>
+                                    <td>Cigrano</td>
+                                    <th class="show992">25</th> <!--visitas-->
+                                    <th class="show992">10</th> <!--vendas-->
+                                    <td>R$ 40300.00</td>
+                                    <td>
+                                        <div class="dsmeta-red-button-container">
+                                            <div class="dsmeta-red-button"> <!--esse div sera o botao-->
+                                                <img src="notification-icon.svg" alt="Notificar">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="show992">#341</th> <!--ID-->
+                                    <td class="show576">08/07/2022</td>
+                                    <td>Beltrano</td>
+                                    <th class="show992">22</th> <!--visitas-->
+                                    <th class="show992">17</th> <!--vendas-->
+                                    <td>R$ 65300.00</td>
+                                    <td>
+                                        <div class="dsmeta-red-button-container">
+                                            <div class="dsmeta-red-button"> <!--esse div sera o botao-->
+                                                <img src="notification-icon.svg" alt="Notificar">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+</html>

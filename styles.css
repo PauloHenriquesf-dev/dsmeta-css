@@ -1,0 +1,202 @@
+/*Aqui vai ser onde vamos definir estilos visuais para o documento*/
+
+/*importando a fonte do google fonts para nosso styles.css*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/*Para a importação da fonte ter efeito (obs o * diz q qualquer elemento é pra ter isso*/
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; /*ver no youtube p/ entender*/
+    margin: 0; /*to dizendo q n vai ter margem, se quiser deve colocar manualmente*/
+    padding: 0; /*o espaçamanto interno de cada elemento*/
+}
+
+/*Tudo que estiver dentro de body e html a cor vai ser branca*/
+body, html {
+    background-color: #000; /*cor de fundo*/
+    color: #fff;
+}
+
+/*retirando a cor da tag do link do instagram (tag a)*/
+/*a:hover quando vc passa o mouse em cima,*/
+/*a:visited quando o link ja foi visitado*/
+a, a:hover, a:visited {
+    color: unset; /*n vai ter nenhuma cor diferente do padrao q no caso é o branco*/
+    text-decoration: none; /*n tem nenhuma decoracao de texto como sublinhado...*/
+}
+
+/*colocar o header com 220px de altura*/
+header {
+    background: linear-gradient(180deg, #102347 0%, #181818 100%); /*joga tipo o degrader*/
+    height: 220px;
+    /*para alinhas ao centro (altura)*/
+    display: flex; /*vai jogar pra esquerda*/
+    align-items: center;
+    /*como colocamos o display: flex foi para a esquerda, entao deve fazer isso*/
+    justify-content: center;
+}
+
+/*Quando estilica uma "class" de usar um . + o nome da class*/
+.dsmeta-logo-container {
+    display: flex;
+    /*textos podem ficar um ao lado do outro*/
+    flex-direction: column; /*a direção do meu flex vai ser um abaixo do outro*/
+    align-items: center; /*alinhando ao centro*/  
+}
+
+/*demilitando a imagem*/
+.dsmeta-logo-container img {
+    /*qualquer img q tiver dentro do container vai ter essas propriedades*/
+    width: 235px;      
+}
+
+/*espaçamento*/
+.dsmeta-logo-container h1 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.dsmeta-logo-container p {
+    font-size: 14px;
+    font-weight: 300; /*Arredondando a borda*/
+}
+
+.dsmeta-card {
+    background-color: #283142;
+    border-radius: 10px;
+    padding: 30px 10px; /*espaçamento*/
+}
+
+.dsmeta-container {
+    width: 100%; /*por padrao vai ocupar toda a largura*/
+    max-width: 900px; /*largura maxima sera isso*/
+    margin: 0 auto;/*para alinhar div ao centro*/
+    /*Quando a tela aumenta maior que 900px ai ele começa a ficar no centro*/
+}
+
+/*class coloca . id coloca #*/
+#sales {
+    padding: 40px 10px; /*demilitr um espaçamento interno*/   
+}
+
+/*Vendas*/
+.dsmeta-sales-title {
+    color: #676FFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/*caixinhas (datas)*/
+.dsmeta-form-control-container {
+    margin-bottom: 16px;/*margem abaixo (espaçamento)*/
+    max-width: 300px; /*quando a tela aumenta ele so aumenta ate 300px*/
+}
+
+/*caixinhas (datas)*/
+.dsmeta-form-control {
+    width: 100%; /*largura*/
+    height: 46px; /*altura*/
+    background-color: #182531; /*cor de fundo*/
+    border: 1px solid #384459; /*borda*/
+    border-radius: 5px; /*arredondamento*/
+    color: #9AAABE;/*cor do que escrever*/
+    padding: 0 20px;/*espaçamento do q vai digitar*/
+    font-size: 18px;
+}
+
+.dsmeta-sales-table {
+    width: 100%; /*largura*/
+    border-spacing: 0;/*os espaçamento das bordas da tabela (os bonequinhos vermelho)*/
+    border-collapse: collapse;
+}
+
+/*O thead que esta dentro dessa class sera formatado*/
+.dsmeta-sales-table thead {
+    height: 55px;/*altura*/
+    font-size: 16px;
+    color: #E9E9E9;
+    font-weight: 700; /*peso da fonte, 700 é negrito*/
+}
+
+/*formatando todo o corpo da tabela*/
+.dsmeta-sales-table tbody {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CFCFCF;
+    text-align: center;/*corpo da tablea p/ ficar alinhado ao centro*/
+}
+
+/*formatando as linhas*/
+.dsmeta-sales-table tbody tr {
+    height: 74px;
+    border-top: 1px solid #5F6E82;/*borda so em cima*/
+}
+
+/*Qual filho do tr? (colocamos odd: ou seja quando a linha for impar)*/
+/*o background-color sera de tau cor*/
+.dsmeta-sales-table tbody tr:nth-child(odd) {
+    background-color: #242C3B;
+}
+
+/*Quando passar o mouse (hover) em cima d euma linha q ela fique destacada*/
+/*td somente naquele elemento vai da o efeito*/
+.dsmeta-sales-table tbody tr:hover > td {
+    background-color: #384459;
+}
+
+.dsmeta-red-button-container {
+    display: flex;
+    justify-content: center; /*horizontalmente ao centro*/
+}
+
+.dsmeta-red-button {
+    height: 45px;
+    width: 45px;
+    border: 1px solid #FF6872;
+    border-radius: 10px;
+    /*alinha o bonequinho vermelho ao centro do quadrado vermelho*/
+    display: flex;
+    align-items: center;/*vertical ao centro*/
+    justify-content: center;/*horizontal ao centro*/
+    cursor: pointer; /*passou o mouse em cima vira mãozinha*/
+}
+
+/*img que tiver dentro: vai acontecer isso (tamanho do bonequinho vermelho)*/
+.dsmeta-red-button img {
+    width: 19px;
+}
+
+/*A Data deve sumir a partir de um tamanho de tela, como vamos faxzer?*/
+/*coloca uma classe nos cara q tem  q sumir (Data) colocamos "show576" la no html*/
+.show576 {
+    display: none; /*nao vai mostrar Data*/
+}
+
+/*A partir do 576 vai valer o que eu escrever em @media*/
+@media (min-width: 576px) {
+    .show576 {
+        display: table-cell;
+    }
+
+    .dsmeta-card {
+        padding: 35px;
+    }
+
+    .dsmeta-sales-table tbody tr {
+        height: 55px;
+    }
+
+    .dsmeta-sales-table tbody {
+        font-size: 18px;
+    }
+}
+
+.show992 {
+    display: none; /*nao vai mostrar as coisas q tem essa referencia show992*/
+}
+
+@media (min-width: 992px) {
+    .show992 {
+        display: table-cell;
+    }
+}
